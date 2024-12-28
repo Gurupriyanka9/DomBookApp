@@ -1,26 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/styles.css">
-  <title>Admin Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="css/admin.css">
 </head>
 <body>
-  <script src="js/common.js"></script>
-  <script>renderNavbar();</script>
-  <h1>Admin Management</h1>
-  <form id="bookForm">
-    <input type="text" id="title" placeholder="Book Title" required>
-    <input type="text" id="author" placeholder="Author" required>
-    <select id="category">
-      <option value="Fiction">Fiction</option>
-      <option value="Comedy">Comedy</option>
-      <option value="Technical">Technical</option>
-    </select>
-    <button type="submit">Add Book</button>
-  </form>
-  <div id="bookContainer"></div>
-  <script src="js/admin.js"></script>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="admin.html">Admin</a>
+        <a href="books.html">Books</a>
+    </nav>
+
+    <div class="container">
+        <h2>Add New Book</h2>
+        <form id="addBookForm">
+            <input type="text" id="title" placeholder="Title" required>
+            <input type="text" id="author" placeholder="Author" required>
+            <select id="category">
+                <option value="fiction">Fiction</option>
+                <option value="comedy">Comedy</option>
+                <option value="technical">Technical</option>
+            </select>
+            <button type="submit">Add Book</button>
+        </form>
+
+        <div id="bookList"></div>
+    </div>
+    <script src="js/admin.js"></script>
 </body>
 </html>
