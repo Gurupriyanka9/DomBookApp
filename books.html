@@ -3,20 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>User Page</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>User Book Page</title>
 </head>
 <body>
-  <div id="navbar"></div>
-
-  <main>
-    <h1>User Book Page</h1>
-    <button id="show-available-books">Show Available Books</button>
-    <button id="show-borrowed-books">Show Borrowed Books</button>
-    <div id="books-container"></div>
-  </main>
-
-  <script src="script/common.js"></script>
-  <script src="script/books.js"></script>
+  <script src="js/common.js"></script>
+  <script>renderNavbar();</script>
+  <h1>User Book Page</h1>
+  <div>
+    <button id="availableBooks">Show Available Books</button>
+    <button id="borrowedBooks">Show Borrowed Books</button>
+  </div>
+  <div id="bookContainer"></div>
+  <script src="js/books.js"></script>
 </body>
 </html>
