@@ -1,4 +1,4 @@
-const baseUrl = "https://your-glitch-project-url.glitch.me/books";
+const baseUrl = "https://imported-concise-cloud.glitch.me/";
 
 document.getElementById("addBookForm").addEventListener("submit", function (event) {
     event.preventDefault();
